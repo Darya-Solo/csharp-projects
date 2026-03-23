@@ -114,7 +114,7 @@ namespace CarFactoryApp
             {
                 try
                 {
-                    Console.Write("Введите марку автомобиля или 'done' для остановки ввода: ");
+                    Console.Write("Введите марку автомобиля или 'done' для остановки ввода:");
 
                     string? input = Console.ReadLine();
 
@@ -133,12 +133,11 @@ namespace CarFactoryApp
                 }
                 catch (Exception ex)
                 {
-                    // Ловим ошибки, чтобы программа не вылетала
                     Console.WriteLine($"Системное уведомление: {ex.Message}");
                 }
             }
 
-            Console.WriteLine("\nСессия завершена. Завод уходит на технический перерыв!");
+            Console.WriteLine("Сессия завершена.");
         }
     }
 }
